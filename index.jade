@@ -1,0 +1,18 @@
+!!!5
+html
+  head
+    title Flashcards for Gists
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+    script
+      $(function () {
+        "use strict";
+
+        $.get('./gistcards.js', function (text) {
+          $('a').attr('href', 'javascript:' + encodeURI(text))
+        }, { dataType: 'html' });
+      });
+  body
+    h1 Gist Cards - Flashcards for gists!
+    p
+      span Copy this bookmark to your bookmark bar, go to a gist, and then click on it.
+      a(href="#not-loaded-yet") GistCards Bookmarklet

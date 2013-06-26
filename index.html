@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><title>Flashcards for Gists</title><script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script><script>$(function () {
+  "use strict";
+  
+  $.get('./gistcards.js', function (text) {
+    $('a').attr('href', 'javascript:' + encodeURI(text))
+  }, { dataType: 'html' });
+});</script></head><body><h1>Gist Cards - Flashcards for gists!</h1><p><span>Copy this bookmark to your bookmark bar, go to a gist, and then click on it.</span><a href="#not-loaded-yet">GistCards Bookmarklet</a></p></body></html>
