@@ -1,8 +1,9 @@
 (function () {
   "use strict";
 
-  // this code is terribad, please don't try to learn from it
-  // I do plan to clean it up, but it's very dirty right now
+  /* this code is terribad, please don't try to learn from it
+   * I do plan to clean it up, but it's very dirty right now
+   */
   var cards
     , flashes = []
     ;
@@ -10,13 +11,13 @@
   function shuffle(array) {
     var m = array.length, t, i;
    
-    // While there remain elements to shuffle…
+    /* While there remain elements to shuffle… */
     while (m) {
    
-      // Pick a remaining element…
+      /* Pick a remaining element… */
       i = Math.floor(Math.random() * m--);
    
-      // And swap it with the current element.
+      /* And swap it with the current element. */
       t = array[m];
       array[m] = array[i];
       array[i] = t;
@@ -37,7 +38,7 @@
       if (null === sibling || 'h3' === sibling.nodeName.toLowerCase()) {
         break;
       }
-      // ignore categories for now
+      /* ignore categories for now */
       if ('h2' === sibling.nodeName.toLowerCase()) {
         sibling = sibling.nextSibling;
         continue;
@@ -49,7 +50,7 @@
     return siblings;
   }
    
-  // hide categories
+  /* hide categories */
   $($('.context-loader-container')[0]).find('h2').hide();
   cards = $($('.context-loader-container')[0]).find('h3');
   cards = [].slice.call(cards);
@@ -70,7 +71,6 @@
       flash = flashes.pop();
       ans = flash.a.slice(0);
       $(flash.q).show();
-      //$(flash.a).show();
     }
     function showCardPart() {
       var a
