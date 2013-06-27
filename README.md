@@ -43,5 +43,5 @@ Sinatra
 post('/find_friends') do
   # do something with `params`
 end
- ```
+````
 ```
