@@ -17,30 +17,29 @@ Format
 
 Any gist that is written in the following format can be used with this javascript.
 
-```markdown
-Pop-Quiz (this is a title)
-===
+    Pop-Quiz (this is a title)
+    ===
 
-Monty Python & the Holy Grail (this is a category)
----
+    Monty Python & the Holy Grail (this is a category)
+    ---
 
-### What is your favorite color? (this is a question)
+    ### What is your favorite color? (this is a question)
 
-Blue... no, YELLOOOOOOOW! (a simple answer)
+    Blue... no, YELLOOOOOOOW! (a simple answer)
 
-### What is the average airspeed velocity of an unladen swallow? (also a question)
+    ### What is the average airspeed velocity of an unladen swallow? (also a question)
 
-11 m/s
+    11 m/s
 
-Source: <http://style.org/unladenswallow/>
+    Source: <http://style.org/unladenswallow/>
 
-Sinatra
----
+    Sinatra (another category)
+    ---
 
-### How would a create a route that responds to a form post? (this is a question)
+    ### How would a create a route that responds to a form post? (this is a question)
 
-```ruby
-post('/find_friends') do
-  # do something with `params`
-end
-```
+    ```ruby
+    post('/find_friends') do
+      # do something with `params`
+    end
+    ```
