@@ -18,19 +18,30 @@ Format
 Any gist that is written in the following format can be used with this javascript.
 
 ```markdown
-Title: Pop-Quiz
+Pop-Quiz (this is a title)
 ===
 
-Category: Monty Python & the Holy Grail
+Monty Python & the Holy Grail (this is a category)
 ---
 
-### Question: What is your favorite color?
+### What is your favorite color? (this is a question)
 
-Answer: Blue... no, YELLOOOOOOOW!
+Blue... no, YELLOOOOOOOW! (a simple answer)
 
-### Question: What is the average airspeed velocity of an unladen swallow?
+### What is the average airspeed velocity of an unladen swallow? (also a question)
 
 11 m/s
 
 Source: <http://style.org/unladenswallow/>
+
+Sinatra
+---
+
+### How would a create a route that responds to a form post? (this is a question)
+
+\```
+post('/find_friends') do
+  # do something with `params`
+end
+\```
 ```
