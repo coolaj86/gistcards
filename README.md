@@ -39,9 +39,9 @@ Sinatra
 
 ### How would a create a route that responds to a form post? (this is a question)
 
-`` ```ruby
+```ruby
 post('/find_friends') do
   # do something with `params`
 end
-`` ```
+ ```
 ```
